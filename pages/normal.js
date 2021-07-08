@@ -39,10 +39,7 @@ export default class Clock extends Component {
         //start loop each (1000/virtualTime) miliseconds
         this.timerId = setInterval(() => {
             //in order to update the state using it's own value, need to use a function
-            this.setState((state) => {
-                //add 1 second each (1000/virtualTime) miliseconds
-                return { time: new Date(state.time.getTime() + 1000) }
-            });
+            this.setState(new Date());
             if (this.state.time.getHours() !== currentHour) {
                 console.log("this.state.time.getHours() " + this.state.time.getHours());
                 totalHours++;
