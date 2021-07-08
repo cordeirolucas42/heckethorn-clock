@@ -1,6 +1,5 @@
-// import Head from 'next/head'
+import Head from 'next/head';
 import React, { Component } from "react";
-// import Player from "/components/Player.js"
 
 const virtualTime = 157; //set this number to adjust how many times faster the virtual time will be.
 const type = "roman"; //change here to change the cock numbers type
@@ -82,6 +81,10 @@ export default class Clock extends Component {
   render() {
     return (
       <div className="clock">
+        <Head>
+          <title>Relógio Heckethorn</title>
+          <link rel="icon" href="/clock.png"/>
+        </Head>
         <audio id="heckethorn">
           <source src="https://www.mboxdrive.com/sonata.mp3" type="audio/mpeg" />
           Your browser does not support the audio element.
