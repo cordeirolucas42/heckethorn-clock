@@ -91,12 +91,12 @@ export default class Clock extends Component {
                 </Head>
                 {/* audio containing the intro to 'Sonata in F Minor K.462' */}
                 <audio id="heckethorn">
-                    <source src="https://www.mboxdrive.com/sonata.mp3" type="audio/mpeg" />
+                    <source src="https://relogio-heckethorn.s3.sa-east-1.amazonaws.com/sonata.mp3" type="audio/mpeg" />
                     Your browser does not support the audio element.
                 </audio>
                 {/* audio with 60 seconds of silence */}
                 <audio id="silence">
-                    <source src="https://www.mboxdrive.com/silence.mp3" type="audio/mpeg" />
+                    <source src="https://relogio-heckethorn.s3.sa-east-1.amazonaws.com/silence.mp3" type="audio/mpeg" />
                     Your browser does not support the audio element.
                 </audio>
                 <p className="link">Esta é a versão acelerada | Clique <a href="/normal">aqui</a> para a versão em tempo real.</p>
